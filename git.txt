@@ -9,9 +9,12 @@ git add .
 #when write change the file we must git add
 git add git.txt
 #Після кожної зміни файлу лише останнє додавання закомітиться
-#Щоб закоментувати зміни команда
+#Commit chenge 
 git commit -m "some text"
 #connect to the git hub
 git remote add origin https://github.com/ValeriyRomanenko/test.git
 git push -u origin master
 
+#Clone other repository from git hub
+#create dir copy/paste url and and cd work directory
+git clone https://github.com/dockerfile/nginx.git
