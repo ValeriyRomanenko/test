@@ -1,0 +1,15 @@
+#open dir 
+cd d:/test
+#init
+git init 
+#V jakomy statusi repozetoriy
+git status
+#add file .-all files
+git add .
+#when write change the file we must git add
+git add git.txt
+#Після кожної зміни файлу лише останнє додавання закомітиться
+#Щоб закоментувати зміни команда
+git commit -m "some text"
+
+
