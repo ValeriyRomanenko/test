@@ -1,3 +1,17 @@
+#Global config 
+git config --global user.name "Valera"
+git config --global user.email "vr@hash.plus"
+#see
+git config --list
+
+#Git ignore
+#create file in the work directory .gitignore
+folder/ - folder for ignored
+folder/*.txt - ignored all txt in folder
+
+#show all untracked files
+git status --untracked-files=all
+
 #open dir 
 cd d:/test
 #init
@@ -17,4 +31,14 @@ git push -u origin master
 
 #Clone other repository from git hub
 #create dir copy/paste url and and cd work directory
-git clone https://github.com/dockerfile/nginx.git
+git clone https://github.com/dockerfile/nginx.git dir
+
+#Stvorennia novoi vietki
+git branch my_style
+#Perehodymo v novy vietku
+git checkout new_style
+#Show all logs
+git log --graph --all --decorate (--oneline)
+
+#Zluttia dvoh vietok 
+git merge new_style
