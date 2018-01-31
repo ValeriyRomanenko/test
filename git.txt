@@ -11,5 +11,7 @@ git add git.txt
 #Після кожної зміни файлу лише останнє додавання закомітиться
 #Щоб закоментувати зміни команда
 git commit -m "some text"
-
+#connect to the git hub
+git remote add origin https://github.com/ValeriyRomanenko/test.git
+git push -u origin master
 
