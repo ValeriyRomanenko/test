@@ -22,9 +22,24 @@ git status
 git add .
 #when write change the file we must git add
 git add git.txt
+git add "*.php"
+#when need delete after add, then
+git rm --cached filename
+
+#LOGI
+#Show all logs
+git log --graph --all --decorate (--oneline)
+git log --pretty=format:"%h - %an, %ar : %s" - korotko hto sho koly
+git log --since=2.weeks - change by 2 week
+git log -p -2 - show zminy u failach
+
+
 #Після кожної зміни файлу лише останнє додавання закомітиться
 #Commit chenge 
 git commit -m "some text"
+
+#Vidkotutu fail z lokalnogo repozytoriju
+git checkout --filename
 #connect to the git hub
 git remote add origin https://github.com/ValeriyRomanenko/test.git
 git push -u origin master
@@ -37,8 +52,6 @@ git clone https://github.com/dockerfile/nginx.git dir
 git branch my_style
 #Perehodymo v novy vietku
 git checkout new_style
-#Show all logs
-git log --graph --all --decorate (--oneline)
 
 #Zluttia dvoh vietok 
 git merge new_style
