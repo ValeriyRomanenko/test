@@ -33,6 +33,10 @@ git log --pretty=format:"%h - %an, %ar : %s" - korotko hto sho koly
 git log --since=2.weeks - change by 2 week
 git log -p -2 - show zminy u failach
 
+#Redactor commit
+git commit - vidkruvajetsia redactor, shob vyjty Esc :x
+#when change redactor
+git config --global core.editor
 
 #Після кожної зміни файлу лише останнє додавання закомітиться
 #Commit chenge 
@@ -40,18 +44,30 @@ git commit -m "some text"
 
 #Vidkotutu fail z lokalnogo repozytoriju
 git checkout --filename
-#connect to the git hub
+
+#CONNECT to the git hub
 git remote add origin https://github.com/ValeriyRomanenko/test.git
+- tyt origin ce nazva zjednannia, moze bytu rizna
+#podyvytys zjednannia
+git remote -v
+
+
 git push -u origin master
 
 #Clone other repository from git hub
 #create dir copy/paste url and and cd work directory
-git clone https://github.com/dockerfile/nginx.git dir
+git clone https://github.com/dockerfile/nginx.git yourdir
 
+#Stvorennia novoi vietki
+git checkout -b new_f - stvoryty i vidrazy zajty
 #Stvorennia novoi vietki
 git branch my_style
 #Perehodymo v novy vietku
 git checkout new_style
+git branch -v - jaki vietki z comitamy
 
 #Zluttia dvoh vietok 
-git merge new_style
+git merge new_style - imia vietki, jaky zaluvajemo do sebe
+#jaksho konflikt to utulita
+git mergetool - pered tym mozna vkazatu utylity:git config --global merge.tool kdiff3
+ 
